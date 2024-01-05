@@ -1,7 +1,9 @@
 function openMenu() {
-  document.body.classList.add("menu-expanded");
+  const sidebar = document.querySelector(".sidebar")
+  sidebar.style.display = "flex"
 }
 
 function closeMenu() {
-  document.body.classList.remove("menu-expanded");
+  const sidebar = document.querySelector(".sidebar")
+  sidebar.style.display = "none"
 }

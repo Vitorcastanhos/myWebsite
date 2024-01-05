@@ -1,52 +1,68 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/style.css" />
-    <title>CastanhosTecnologia</title>
-  </head>
-  <body>
-    <nav id="navElement">
-      <div class="wrapper">
-        <h3 class="logo" href="#home">Castanhos Tecnologia</h3>
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wght@8..144,400;8..144,500;8..144,600;8..144,700;8..144,900&display=swap" rel="stylesheet" />
+      <link rel="stylesheet" href="./css/style.css" />
+      <title>Castanhos Tecnologia</title>
+   </head>
 
-        <div class="menu">
-          <ul>
-            <li><a onclick="closeMenu()" href="#services">Serviços</a></li>
-            <li><a onclick="closeMenu()" href="#contact">Contato</a></li>
-            <li><a onclick="closeMenu()" href="#about">Sobre</a></li>
-          </ul>
+   <body>
+      <div class="container">
+         <nav>
+            <a href="#home">
+               <h3 class="logo">Castanhos Tecnologia</h3>
+            </a>
+
+            <ul class="sidebar">
+               <li>
+                  <a onclick="closeMenu()" href="#">
+                     <svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 -960 960 960" width="20">
+                        <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                     </svg>
+                  </a>
+               </li>
+               <li><a onclick="closeMenu()" href="#services">Serviços</a></li>
+               <li><a onclick="closeMenu()" href="#contact">Contato</a></li>
+               <li><a onclick="closeMenu()" href="#about">Sobre</a></li>
+            </ul>
+            <ul>
+               <li class="hideOnMobile"><a href="#services">Serviços</a></li>
+               <li class="hideOnMobile"><a href="#about">Sobre</a></li>
+               <li class="hideOnMobile"><a href="#contact">Contato</a></li>
+               <li class="menu-button">
+                  <a class="menu-button" onclick="openMenu()" href="#">
+                     <svg width="26px" height="26px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g id="Menu / Menu_Alt_01">
+                           <path id="Vector" d="M12 17H19M5 12H19M5 7H19" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </g>
+                     </svg>
+                  </a>
+               </li>
+            </ul>
+         </nav>
+
+         <div class="line"><span></span></div>
+
+         <div class="home-container">
+         <main class="home">
+            <div class="entry">
+               <h1>Serviços de suporte de TI confiáveis</h1>
+               <p>Experimente serviços de suporte de TI de alto nível para o seu negócio. Fornecemos soluções especializadas para manter seus sistemas funcionando sem problemas e seguros.</p>
+               <button>Contato</button>
+            </div>
+            <div class="imgElement">
+               <img
+                  src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0OTUyODh8MHwxfHNlYXJjaHwyMHx8dGVjaG5vbG9neSUyMHN1cHBvcnR8ZW58MHwwfHx8MTcwNDIyOTIzOHww&ixlib=rb-4.0.3&q=80&w=1080"
+                  alt="Robô segurando um tablet"
+               />
+            </div>
+         </main>
         </div>
-
-        <button aria-expanded="false" aria-label="Abrir menu" onclick="openMenu()" class="open-menu">
-          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="M1.66634 16.6667H18.333C18.7913 16.6667 19.1663 16.2917 19.1663 15.8333C19.1663 15.375 18.7913 15 18.333 15H1.66634C1.20801 15 0.833008 15.375 0.833008 15.8333C0.833008 16.2917 1.20801 16.6667 1.66634 16.6667ZM0.833008 4.16668C0.833008 4.62501 1.20801 5.00001 1.66634 5.00001H18.333C18.7913 5.00001 19.1663 4.62501 19.1663 4.16668C19.1663 3.70834 18.7913 3.33334 18.333 3.33334H1.66634C1.20801 3.33334 0.833008 3.70834 0.833008 4.16668ZM1.66634 10.8333H18.333C18.7913 10.8333 19.1663 10.4583 19.1663 10C19.1663 9.54168 18.7913 9.16668 18.333 9.16668H1.66634C1.20801 9.16668 0.833008 9.54168 0.833008 10C0.833008 10.4583 1.20801 10.8333 1.66634 10.8333Z"
-              fill="currentColor"></path>
-          </svg>
-          <path
-            d="M1.66634 16.6667H18.333C18.7913 16.6667 19.1663 16.2917 19.1663 15.8333C19.1663 15.375 18.7913 15 18.333 15H1.66634C1.20801 15 0.833008 15.375 0.833008 15.8333C0.833008 16.2917 1.20801 16.6667 1.66634 16.6667ZM0.833008 4.16668C0.833008 4.62501 1.20801 5.00001 1.66634 5.00001H18.333C18.7913 5.00001 19.1663 4.62501 19.1663 4.16668C19.1663 3.70834 18.7913 3.33334 18.333 3.33334H1.66634C1.20801 3.33334 0.833008 3.70834 0.833008 4.16668ZM1.66634 10.8333H18.333C18.7913 10.8333 19.1663 10.4583 19.1663 10C19.1663 9.54168 18.7913 9.16668 18.333 9.16668H1.66634C1.20801 9.16668 0.833008 9.54168 0.833008 10C0.833008 10.4583 1.20801 10.8333 1.66634 10.8333Z"
-            fill="currentColor"></path>
-        </button>
-
-        <button aria-expanded="true" aria-label="Fechar menu" onclick="closeMenu()" class="close-menu">
-          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="M10.015 11.1935L3.93761 17.2709C3.15194 18.0566 1.97343 16.8781 2.7591 16.0924L8.83651 10.015L2.7591 3.93761C1.97343 3.15194 3.15194 1.97343 3.93761 2.7591L10.015 8.83651L16.0924 2.7591C16.8781 1.97343 18.0566 3.15194 17.2709 3.93761L11.1935 10.015L17.2709 16.0924C18.0566 16.8781 16.8781 18.0566 16.0924 17.2709L10.015 11.1935Z"
-              fill="currentColor"></path>
-          </svg>
-        </button>
       </div>
-    </nav>
-
-    <div class="container">
-      <p></p>
-      <img src="" alt="" />
-    </div>
-
-    <script src="./javascript/main.js"></script>
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-  </body>
+      <script src="./javascript/main.js"></script>
+   </body>
 </html>
