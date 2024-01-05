@@ -6,7 +6,6 @@
 
 html {
    scroll-behavior: smooth;
-   font-family: "Roboto Serif", sans-serif;
 }
 
 body {
@@ -18,6 +17,10 @@ body {
 
    /* min-height: 100vh; */
    background-color: hsl(0, 0%, 100%);
+}
+
+.global-container {
+   max-width: 576px;
 }
 
 /* ----------------- navigation bar ------------------- */
@@ -32,22 +35,6 @@ nav {
    height: 72px;
 }
 
-nav ul {
-   max-width: 100%;
-
-   list-style: none;
-   font-size: 1.2rem;
-
-   display: flex;
-   justify-content: flex-end;
-   align-items: center;
-   gap: 1rem;
-}
-
-.hideOnMobile {
-   padding: 6.5px 13px;
-}
-
 nav a {
    height: 100%;
 
@@ -57,28 +44,34 @@ nav a {
    align-items: center;
    justify-content: center;
 
+   padding: 6.5px 13px;
+
    color: black;
 }
 
-nav a:hover {
-   background-color: rgb(24, 106, 49);
+nav ul {
+   display: flex;
+   justify-content: flex-end;
+   align-items: center;
+   gap: 1rem;
+
+   max-width: 100%;
+
+   list-style: none;
+   font-size: 1.2rem;
 }
+
+nav .logo {
+   font-weight: 500;
+   font-size: 19.5px;
+   line-height: 2.25rem;
+}
+
+/* --------------- LINE -------------- */
 
 .line {
    border: 1px solid rgba(196, 194, 194, 0.211);
    width: 100%;
-}
-
-/* --------------- logo -------------- */
-nav .logo {
-   font-weight: 500;
-   font-size: 1.3rem;
-   line-height: 2.25rem;
-}
-
-.menu-button a {
-   width: 26px;
-   height: 26px;
 }
 
 /* --------------- sidebar -------------- */
@@ -125,22 +118,27 @@ nav .logo {
    flex-direction: column;
 
    row-gap: 24px;
+
+   margin: 0 -9.75px;
 }
 
 .home h1 {
    font-size: 32.5px;
    font-weight: 500;
+   line-height: 39px;
 
-   margin-bottom: 23px;
+   margin-bottom: 19.5px;
 }
 
 .home p {
    font-size: 16.25px;
    font-weight: 300;
-   line-height: 1.5rem;
+   line-height: 26px;
    text-align: left;
 
-   margin-bottom: 23px;
+   margin-bottom: 22.75px;
+
+   color: rgb(68, 64, 60);
 }
 
 .home .btn,
@@ -162,19 +160,16 @@ nav .logo {
 
 .home img,
 .services img {
-   display: flex;
-   align-items: center;
-   justify-content: center;
+   display: block;
 
    max-width: 100%;
-   width: 100%;
-   height: auto;
 
+   aspect-ratio: 1.3333333333333333;
+   object-fit: cover;
    overflow: hidden;
+   width: 100%;
 
    border-radius: 5px;
-
-   -webkit-font-smoothing: antialiased;
 }
 
 .entry,
@@ -191,14 +186,22 @@ nav .logo {
 
 .services h2 {
    text-align: center;
-   font-size: 2rem;
+   font-size: 26px;
    font-weight: 500;
    line-height: 2.6rem;
 
    margin-bottom: 38px;
 }
 
+/*------------------- DESKTOP PART --------------------*/
+
 /* --------- medias ---------- */
+@media (min-width: 576px) {
+  .global-container {
+    margin: auto;
+    padding: 0 10px;
+  }
+}
 
 @media (max-width: 768px) {
    .hideOnMobile {
@@ -207,6 +210,10 @@ nav .logo {
 
    .menu-button {
       display: block;
+   }
+
+   .hideOnMobile {
+      padding: 6.5px 13px;
    }
 }
 
