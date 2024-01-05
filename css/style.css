@@ -13,7 +13,9 @@ body {
    max-width: 1140px;
 
    font-family: "Roboto Serif", sans-serif;
+
    margin: 0 auto;
+
    /* min-height: 100vh; */
    background-color: hsl(0, 0%, 100%);
 }
@@ -121,7 +123,7 @@ nav .logo {
    width: 100%;
    display: flex;
    flex-direction: column;
- 
+
    row-gap: 24px;
 }
 
@@ -138,12 +140,11 @@ nav .logo {
    line-height: 1.5rem;
    text-align: left;
 
-   
-
    margin-bottom: 23px;
 }
 
-.home button {
+.home .btn,
+#btn {
    height: 39px;
 
    padding: 6.5px 16px;
@@ -159,7 +160,8 @@ nav .logo {
    background-color: #6ee7b7;
 }
 
-.home img {
+.home img,
+.services img {
    display: flex;
    align-items: center;
    justify-content: center;
@@ -178,6 +180,22 @@ nav .logo {
 .entry,
 .imgElement {
    padding: 0 9.75px;
+}
+
+/* --------- services ---------- */
+.services-container {
+   padding: 48px 24px;
+
+   background-color: #f5f5f4;
+}
+
+.services h2 {
+   text-align: center;
+   font-size: 2rem;
+   font-weight: 500;
+   line-height: 2.6rem;
+
+   margin-bottom: 38px;
 }
 
 /* --------- medias ---------- */
