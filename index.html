@@ -12,12 +12,22 @@
 
    <body>
       <div class="global-container">
-         <nav>
-            <a href="#home">
+         <nav class="nav-container">
+            <header>
                <h3 class="logo">Castanhos Tecnologia</h3>
-            </a>
+            </header>
 
-            <ul class="sidebar">
+            <div class="menu-btn">
+               <a class="menu-button" onclick="openMenu()" href="#">
+                  <svg width="20px" height="20px" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                     <g id="Menu / Menu_Alt_01">
+                        <path id="Vector" d="M12 17H19M5 12H19M5 7H19" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                     </g>
+                  </svg>
+               </a>
+            </div>
+
+            <!-- <ul class="sidebar">
                <li>
                   <a onclick="closeMenu()" href="#">
                      <svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 -960 960 960" width="20">
@@ -33,27 +43,23 @@
                <li class="hideOnMobile"><a href="#services">Serviços</a></li>
                <li class="hideOnMobile"><a href="#about">Sobre</a></li>
                <li id="btn" class="hideOnMobile"><a href="#contact">Contato</a></li>
-               <li class="menu-button">
-                  <a class="menu-button" onclick="openMenu()" href="#">
-                     <svg width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <g id="Menu / Menu_Alt_01">
-                           <path id="Vector" d="M12 17H19M5 12H19M5 7H19" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                        </g>
-                     </svg>
-                  </a>
-               </li>
-            </ul>
+            </ul> -->
          </nav>
 
-         <div class="line"><span></span></div>
+         <div class="line">
+            <span></span>
+         </div>
 
          <div class="home-container">
             <main class="home">
                <div class="entry">
                   <h1>Serviços de suporte de TI confiáveis</h1>
                   <p>Experimente serviços de suporte de TI de alto nível para o seu negócio. Fornecemos soluções especializadas para manter seus sistemas funcionando sem problemas e seguros.</p>
-                  <a href="#contact"><button class="btn">Contato</button></a>
+                  <a href="#contact">
+                     <button class="btn">Contato</button>
+                  </a>
                </div>
+
                <div class="imgElement">
                   <img
                      src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0OTUyODh8MHwxfHNlYXJjaHwyMHx8dGVjaG5vbG9neSUyMHN1cHBvcnR8ZW58MHwwfHx8MTcwNDIyOTIzOHww&ixlib=rb-4.0.3&q=80&w=1080"
@@ -72,6 +78,30 @@
                      src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0OTUyODh8MHwxfHNlYXJjaHwxMHx8dGVjaG5vbG9neSUyMHN1cHBvcnR8ZW58MHwwfHx8MTcwNDIyOTI0N3ww&ixlib=rb-4.0.3&q=80&w=1080"
                      alt="pessoa usando um Macbook Pro"
                   />
+                  <div class="text">
+                     <h3>Assistência técnica de TI</h3>
+                     <p>Nossa equipe dedicada de suporte técnico de TI está sempre pronta para ajudá-lo com qualquer problema técnico e fornecer suporte oportuno.</p>
+                  </div>
+               </div>
+               <div class="imgElement">
+                  <img
+                     src="https://images.unsplash.com/photo-1568952433726-3896e3881c65?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0OTUyODh8MHwxfHNlYXJjaHw5fHx0ZWNobm9sb2d5fGVufDB8MHx8fDE3MDQyMTUwMzF8MA&ixlib=rb-4.0.3&q=80&w=1080"
+                     alt="pessoa usando um Macbook Pro"
+                  />
+                  <div class="text">
+                     <h3>Assistência técnica de TI</h3>
+                     <p>Nossa equipe dedicada de suporte técnico de TI está sempre pronta para ajudá-lo com qualquer problema técnico e fornecer suporte oportuno.</p>
+                  </div>
+               </div>
+               <div class="imgElement">
+                  <img
+                     src="https://images.unsplash.com/photo-1615309662472-4ca77a77a189?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0OTUyODh8MHwxfHNlYXJjaHwxMHx8Y2xvdWQlMjBjb21wdXRpbmd8ZW58MHwwfHx8MTcwNDIyOTI0NXww&ixlib=rb-4.0.3&q=80&w=1080"
+                     alt="pessoa usando um Macbook Pro"
+                  />
+                  <div class="text">
+                     <h3>Assistência técnica de TI</h3>
+                     <p>Nossa equipe dedicada de suporte técnico de TI está sempre pronta para ajudá-lo com qualquer problema técnico e fornecer suporte oportuno.</p>
+                  </div>
                </div>
             </div>
          </div>
