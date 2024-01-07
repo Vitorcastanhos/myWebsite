@@ -25,6 +25,19 @@ body {
    background-color: hsl(0, 0%, 100%);
 }
 
+.texth2 {
+   text-align: center;
+   font-size: 2.6rem;
+   font-weight: 500;
+   line-height: 2.6rem;
+
+   margin-bottom: 3.8rem;
+}
+
+.containers {
+   padding: 4.8rem 2.4rem;
+}
+
 /* ----------------- navigation bar ------------------- */
 
 nav {
@@ -98,10 +111,6 @@ nav .logo {
 }
 
 /* --------- section home ---------- */
-.home-container {
-   padding: 48px 24px;
-}
-
 .home {
    width: 100%;
    display: flex;
@@ -169,18 +178,7 @@ nav .logo {
 
 /* ----------------------- SERVICES --------------------------- */
 .services-container {
-   padding: 4.8rem 2.4rem;
-
    background-color: #f5f5f4;
-}
-
-.services h2 {
-   text-align: center;
-   font-size: 2.6rem;
-   font-weight: 500;
-   line-height: 2.6rem;
-
-   margin-bottom: 3.8rem;
 }
 
 .services img {
@@ -206,6 +204,28 @@ nav .logo {
 
 .services .imgElement {
    margin-bottom: 1.95rem;
+}
+
+/* ----------------------- GALERY --------------------------- */
+.gallery-images {
+   display: flex;
+   flex-wrap: wrap;
+}
+
+.gallery-images img {
+   aspect-ratio: 1.3333333333333333;
+   background-clip: content-box;
+   background-repeat: no-repeat;
+   background-size: cover;
+
+   width: 50%;
+
+   padding: 4px;
+}
+
+/* ----------------------- MESSAGE AND BANNER --------------------------- */
+.message h2 {
+   margin: 0;
 }
 
 /*------------------- DESKTOP PART --------------------*/
