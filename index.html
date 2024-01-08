@@ -180,9 +180,35 @@
 
          <!--  -->
 
-         <div class="containers" id="contact-container">
-            <h2 class="texth2">Contate-nos</h2>
-         </div>
+         <section>
+            <div class="containers" id="contact-container">
+               <div class="h2-container">
+                  <h2 class="texth2">Contate-nos</h2>
+               </div>
+
+               <div id="input-container">
+                  <div class="mb-1">
+                     <label for="email" class="form-label">Email (Obrigatório)</label>
+                     <input type="text" class="form-control" id="email" placeholder="name@example.com" value="" required />
+                  </div>
+
+                  <div class="mb-1">
+                     <label for="name" class="form-label">Nome (Obrigatório)</label>
+                     <input type="text" class="form-control" id="name" value="" required />
+                  </div>
+                  <div class="mb-1">
+                     <label for="phone" class="form-label">Telefone</label>
+                     <input type="text" class="form-control" id="phone" value="" />
+                  </div>
+
+                  <div class="mb-2">
+                     <label for="message" class="form-label">Menssagem (Obrigatório)</label>
+                     <textarea required class="form-control" id="message"></textarea>
+                  </div>
+                  <button class="btn" type="submit">Contate-nos</button>
+               </div>
+            </div>
+         </section>
 
          <footer></footer>
       </div>
