@@ -7,44 +7,59 @@
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
       <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wght@8..144,300;8..144,400;8..144,500;8..144,600;8..144,700;8..144,900&display=swap" rel="stylesheet" />
       <link rel="stylesheet" href="./css/style.css" />
+      <script src="https://unpkg.com/scrollreveal"></script>
+
       <title>Castanhos Tecnologia</title>
    </head>
 
    <body>
       <div id="global-container">
-         <!--  -->
+         <section id="logo">
+            <nav id="nav-container">
+               <h3 class="logo">Castanhos Tecnologia</h3>
 
-         <nav id="nav-container">
-            <h3 class="logo">Castanhos Tecnologia</h3>
+               <!--  -->
 
-            <div class="menu-btn">
-               <a class="menu-button" onclick="openMenu()" href="#">
-                  <svg width="20px" height="20px" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                     <g id="Menu / Menu_Alt_01">
-                        <path id="Vector" d="M12 17H19M5 12H19M5 7H19" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                     </g>
-                  </svg>
-               </a>
-            </div>
+               <div class="sidebar-wrapper">
+                  <ul class="sidebar">
+                     <li>
+                        <a onclick="closeMenu()" href="#">
+                           <svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 -960 960 960" width="20">
+                              <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                           </svg>
+                        </a>
+                     </li>
+                     <li><a onclick="closeMenu()" href="#logo">Iníco</a></li>
+                     <li><a onclick="closeMenu()" href="#services">Serviços</a></li>
+                     <li><a onclick="closeMenu()" href="#gallery">Galeria</a></li>
+                     <li><a onclick="closeMenu()" href="#message">Contato</a></li>
+                  </ul>
+               </div>
 
-            <!-- <ul class="sidebar">
-               <li>
-                  <a onclick="closeMenu()" href="#">
-                     <svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 -960 960 960" width="20">
-                        <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+               <!--  -->
+
+               <div class="desktop-wrapper">
+                  <ul class="desktop">
+                     <li><a href="#logo">Iníco</a></li>
+                     <li><a href="#services">Serviços</a></li>
+                     <li><a href="#gallery">Galeria</a></li>
+                     <li><a href="#message">Contato</a></li>
+                  </ul>
+               </div>
+
+               <!--  -->
+
+               <div class="menu-btn">
+                  <a class="menu-button" onclick="openMenu()" href="#">
+                     <svg width="20px" height="20px" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g id="Menu / Menu_Alt_01">
+                           <path id="Vector" d="M12 17H19M5 12H19M5 7H19" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </g>
                      </svg>
                   </a>
-               </li>
-               <li><a onclick="closeMenu()" href="#services">Serviços</a></li>
-               <li><a onclick="closeMenu()" href="#contact">Contato</a></li>
-               <li><a onclick="closeMenu()" href="#about">Sobre</a></li>
-            </ul>
-            <ul>
-               <li class="hideOnMobile"><a href="#services">Serviços</a></li>
-               <li class="hideOnMobile"><a href="#about">Sobre</a></li>
-               <li id="btn" class="hideOnMobile"><a href="#contact">Contato</a></li>
-            </ul> -->
-         </nav>
+               </div>
+            </nav>
+         </section>
 
          <!--  -->
 
@@ -54,14 +69,14 @@
 
          <!--  -->
 
-         <section class="home">
+         <section id="home">
             <div class="containers" id="home-container">
                <main class="home-wrapper">
                   <div class="entry">
                      <h1>Serviços de suporte de TI confiáveis</h1>
                      <p>Experimente serviços de suporte de TI de alto nível para o seu negócio. Fornecemos soluções especializadas para manter seus sistemas funcionando sem problemas e seguros.</p>
                      <a href="#contact">
-                        <button class="btn">Contato</button>
+                        <button class="btn">Contate-nos</button>
                      </a>
                   </div>
 
@@ -77,7 +92,7 @@
 
          <!--  -->
 
-         <section class="sercices">
+         <section id="services">
             <div class="containers" id="services-container">
                <div class="services-wrapper">
                   <h2 class="texth2">Nossos Serviços</h2>
@@ -98,8 +113,8 @@
                            alt="pessoa usando um Macbook Pro"
                         />
                         <div class="text">
-                           <h3>Assistência técnica de TI</h3>
-                           <p>Nossa equipe dedicada de suporte técnico de TI está sempre pronta para ajudá-lo com qualquer problema técnico e fornecer suporte oportuno.</p>
+                           <h3>Backup e recuperação de dados</h3>
+                           <p>Garanta a segurança e a disponibilidade dos seus dados críticos com nossas soluções confiáveis de backup e recuperação de desastres.</p>
                         </div>
                      </div>
                      <div class="imgElement">
@@ -108,8 +123,8 @@
                            alt="pessoa usando um Macbook Pro"
                         />
                         <div class="text">
-                           <h3>Assistência técnica de TI</h3>
-                           <p>Nossa equipe dedicada de suporte técnico de TI está sempre pronta para ajudá-lo com qualquer problema técnico e fornecer suporte oportuno.</p>
+                           <h3>Serviços na nuvem</h3>
+                           <p>Aproveite o poder da nuvem para agilizar suas operações, aprimorar a colaboração e melhorar a escalabilidade.</p>
                         </div>
                      </div>
                   </div>
@@ -119,7 +134,7 @@
 
          <!--  -->
 
-         <section class="gallery">
+         <section id="gallery">
             <div class="containers" id="gallery-container">
                <div class="gallery">
                   <h2 class="texth2">Gallery</h2>
@@ -163,7 +178,7 @@
 
          <!--  -->
 
-         <section class="message">
+         <section id="message">
             <div class="containers" id="message-container">
                <div class="message-wrapper">
                   <div class="message">
@@ -178,7 +193,7 @@
 
          <!--  -->
 
-         <section class="banner">
+         <section id="banner">
             <div id="banner-container">
                <div class="banner">
                   <img
@@ -191,7 +206,7 @@
 
          <!--  -->
 
-         <section class="contact">
+         <section id="contact">
             <form class="containers" id="contact-container">
                <div class="h2-container">
                   <h2 class="texth2">Contate-nos</h2>
@@ -199,22 +214,22 @@
                <div class="adjust">
                   <div id="input-container">
                      <div class="mb-1">
-                        <label for="email" class="form-label">Email (obrigatório)</label>
-                        <input type="text" class="form-control" id="email" placeholder="name@example.com" value="" required />
+                        <label for="emails" class="form-label">Email (obrigatório)</label>
+                        <input type="text" class="form-control" id="emails" placeholder="name@example.com" value="" required />
                      </div>
 
                      <div class="mb-1">
-                        <label for="name" class="form-label">Nome (obrigatório)</label>
-                        <input type="text" class="form-control" id="name" value="" required />
+                        <label for="names" class="form-label">Nome (obrigatório)</label>
+                        <input type="text" class="form-control" id="names" required />
                      </div>
                      <div class="mb-1">
-                        <label for="phone" class="form-label">Telefone</label>
-                        <input type="text" class="form-control" id="phone" value="" />
+                        <label for="phones" class="form-label">Telefone</label>
+                        <input type="text" class="form-control" id="phones" />
                      </div>
 
                      <div class="mb-2">
-                        <label for="message" class="form-label">Menssagem (obrigatório)</label>
-                        <textarea required class="form-control" id="message"></textarea>
+                        <label for="messages" class="form-label">Menssagem (obrigatório)</label>
+                        <textarea class="form-control" id="messages" required></textarea>
                      </div>
                      <button class="btn" type="submit">Contate-nos</button>
                   </div>
@@ -224,7 +239,7 @@
 
          <!--  -->
 
-         <section class="footer">
+         <section id="footer">
             <footer class="containers" id="footer-container">
                <div class="col">
                   <h3 class="logo">Castanhos Tecnologia</h3>
@@ -236,6 +251,16 @@
                </div>
             </footer>
          </section>
+
+         <!--  -->
+
+         <a id="backToTopButton" href="#logo"
+            ><svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+               <circle cx="20" cy="20" r="20" fill="#00856F" />
+               <path d="M20 27V13" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+               <path d="M13 20L20 13L27 20" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+         </a>
       </div>
 
       <script src="./javascript/main.js"></script>

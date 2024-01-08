@@ -79,6 +79,10 @@ footer .logo {
    line-height: 2.9rem;
 }
 
+.desktop {
+   display: none;
+}
+
 /* ---------------------- LINE ------------------------ */
 
 .line {
@@ -352,6 +356,29 @@ textarea.form-control {
    padding: 0 9.75px;
 }
 
+/* ----------------------- SIDEBAR --------------------------- */
+.sidebar {
+   display: none;
+}
+
+/* ----------------------- BACKTOTOPBUTTON --------------------------- */
+#backToTopButton {
+   position: fixed;
+   bottom: 1rem;
+   right: 3rem;
+
+   opacity: 0;
+   visibility: hidden;
+
+   transition: opacity.2s ease-in-out;
+   transition: 300ms ease-in;
+}
+
+#backToTopButton.show {
+   opacity: 1;
+   visibility: visible;
+}
+
 /*------------------- DESKTOP PART --------------------*/
 
 /* --------- medias ---------- */
@@ -380,6 +407,16 @@ textarea.form-control {
 
    .imgElement {
       padding: 0 9.75px 0 19.5px;
+   }
+}
+
+@media (min-width: 992px) {
+   .desktop {
+      display: flex;
+   }
+
+   .menu-btn {
+      display: none;
    }
 }
 
