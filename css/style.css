@@ -261,28 +261,13 @@ nav .logo {
 }
 
 /* ----------------------- BANNER --------------------------- */
-#banner-container {
-   width: 100%;
+.banner {
    height: 16rem !important;
-   max-height: 32rem;
-   min-height: 8rem;
-
-   background-position: center;
-   background-repeat: no-repeat;
-   background-size: cover;
-
-   overflow: hidden;
 }
 
 .banner img {
-   height: 100%;
    width: 100%;
-
-   overflow: hidden;
-
-   background-size: cover;
-   background-repeat: no-repeat;
-   background-position: center;
+   height: 100%;
 }
 
 /* ----------------------- CONTACT --------------------------- */
