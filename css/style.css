@@ -24,7 +24,7 @@ body {
 
    /* min-height: 100vh; */
    color: #0c0a09;
-   background-color: hsl(0, 0%, 100%);
+   background-color: #ffffff;
 }
 
 .texth2 {
@@ -52,6 +52,12 @@ nav {
    height: 7.2rem;
 }
 
+nav a {
+   text-decoration: none;
+
+   color: #0c0a09;
+}
+
 nav a.menu-button {
    padding: 0;
 }
@@ -75,14 +81,26 @@ nav ul {
 nav .logo,
 footer .logo {
    font-weight: 500;
-   font-size: 1.95rem;
+   font-size: 2rem;
    line-height: 2.9rem;
 }
 
 .desktop {
    display: none;
+   gap: 1rem;
 }
 
+.desktop .opt {
+   padding: 6.5px 13px;
+
+   font-size: 1.6rem;
+   line-height: 2.6rem;
+}
+
+.desktop .btn {
+   margin-left: 0.5rem;
+   text-align: right;
+}
 /* ---------------------- LINE ------------------------ */
 
 .line {
@@ -148,7 +166,8 @@ footer .logo {
 }
 
 .home-wrapper .btn,
-#contact-container .btn {
+#contact-container .btn,
+.desktop .btn {
    height: 39px;
 
    padding: 6.5px 16px;
@@ -421,6 +440,10 @@ textarea.form-control {
 }
 
 @media (min-width: 992px) {
+   #global-container {
+      max-width: 96rem;
+   }
+
    .desktop {
       display: flex;
    }
