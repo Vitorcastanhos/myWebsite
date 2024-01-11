@@ -31,7 +31,9 @@ body {
    text-align: center;
    font-size: 2.6rem;
    font-weight: 500;
-   line-height: 2.6rem;
+   line-height: 2.6em;
+
+   color: #0c0a09;
 
    margin-bottom: 3.8rem;
 }
@@ -168,7 +170,8 @@ footer .logo {
 .home-wrapper .btn,
 #contact-container .btn,
 .desktop .btn {
-   height: 39px;
+   height: 39.98px;
+   line-height: 2.4rem;
 
    padding: 6.5px 16px;
 
@@ -238,13 +241,14 @@ footer .logo {
 .gallery-images {
    display: flex;
    flex-wrap: wrap;
+   width: 100%;
 }
 
 .gallery-images img {
-   aspect-ratio: 1.3333333333333333;
+   /* aspect-ratio: 1.3333333333333333;
    background-clip: content-box;
    background-repeat: no-repeat;
-   background-size: cover;
+   background-size: cover; */
 
    width: 50%;
 
@@ -290,6 +294,8 @@ footer .logo {
 /* ----------------------- BANNER --------------------------- */
 .banner {
    height: 16rem !important;
+   max-height: 320px;
+   min-height: 80px;
 }
 
 .banner > .img {
@@ -311,7 +317,7 @@ footer .logo {
 }
 
 #contact-container h2 {
-   line-height: 3.4rem;
+   line-height: 34.125px;
 
    margin-bottom: 1.6rem;
 }
@@ -323,13 +329,15 @@ footer .logo {
    width: 100%;
    max-width: 100%;
 
+   line-height: 2.6rem;
+
    margin-top: 3.9rem;
    padding: 0 1.95rem;
 }
 
 .adjust {
-   margin: -3.95rem -1.95rem 0;
-   padding: 0 0 3.9rem;
+   margin: -3.9rem -1.95rem 0;
+   padding-bottom: 3.9rem;
 }
 
 .h2-container {
@@ -373,15 +381,27 @@ textarea.form-control {
 }
 
 /* ----------------------- FOOTER --------------------------- */
-.col:first-child {
-   margin-bottom: 3rem;
+.footer-logo {
+   margin-bottom: 3.9rem;
 }
 
-.col {
+.footer-logo > h3 {
+   font-size: 1.95rem;
+   font-weight: 500;
+   line-height: 29.25px;
+}
+
+.footer-logo,
+.footer-company {
    display: flex;
    flex: 1 0 0%;
 
    padding: 0 9.75px;
+   margin-left: 0;
+}
+
+.footer-company {
+   line-height: 26.84px;
 }
 
 /* ----------------------- SIDEBAR --------------------------- */
@@ -433,7 +453,10 @@ textarea.form-control {
 
    #home-container,
    #services-container,
-   #gallery-container {
+   #gallery-container,
+   #messages-container,
+   #contact-container,
+   #footer-container {
       padding: 6.4rem 7.2rem;
    }
 
@@ -441,6 +464,12 @@ textarea.form-control {
    .home-wrapper .imgElement {
       padding: 0 9.75px;
       margin-bottom: 1.95rem !important;
+   }
+
+   .banner {
+      height: 32rem !important;
+      max-height: 640px;
+      min-height: 160px;
    }
 }
 
@@ -481,9 +510,29 @@ textarea.form-control {
    }
 
    .gallery-images {
-      display: flex;
-      flex-direction: column;
+      width: 100%;
+   }
 
+   .gallery-images .first-line {
+      display: flex;
+   }
+
+   .gallery-images .second-line {
+      display: flex;
+      flex-direction: row;
+      flex: 0 0 auto;
+      width: 33.33333333%;
+   }
+
+   #contact-container .adjust {
+      margin: -3.9rem -1.95rem 0;
+      display: flex;
+      justify-content: center;
+   }
+
+   #input-container {
+      flex: 0 0 auto;
+      width: 50%;
    }
 
    .desktop {
