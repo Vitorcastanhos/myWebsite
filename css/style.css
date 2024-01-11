@@ -15,7 +15,7 @@ body {
 }
 
 body {
-   max-width: 1140px;
+   /* max-width: 1140px; */
 
    font-size: 1.6rem;
    font-family: "Roboto Serif", sans-serif;
@@ -191,14 +191,13 @@ footer .logo {
    object-fit: cover;
    overflow: hidden;
    width: 100%;
-   height: 100%;
 
-   border-radius: 5px;
+   border-radius: 4px;
 }
 
 .entry,
 .imgElement {
-   padding: 0 9.75px;
+   padding: 0 1.95rem 0 9.75px;
 }
 
 /* ----------------------- SERVICES --------------------------- */
@@ -231,7 +230,7 @@ footer .logo {
    margin: 0 -9.75px;
 }
 
-.services-wrapper .imgElement {
+.services-wrapper > .imgElement {
    margin-bottom: 2.2rem;
 }
 
@@ -427,21 +426,64 @@ textarea.form-control {
       max-width: 72rem;
       margin: 0 auto;
    }
-   #home-container {
-      padding: 6.4rem 7.2rem;
-   }
+
    #nav-container {
       padding: 0 7.2rem;
    }
 
-   .imgElement {
-      padding: 0 9.75px 0 19.5px;
+   #home-container,
+   #services-container,
+   #gallery-container {
+      padding: 6.4rem 7.2rem;
+   }
+
+   .services-wrapper .imgElement,
+   .home-wrapper .imgElement {
+      padding: 0 9.75px;
+      margin-bottom: 1.95rem !important;
    }
 }
 
 @media (min-width: 992px) {
    #global-container {
       max-width: 96rem;
+   }
+
+   .home-wrapper {
+      min-height: 42rem;
+      width: 100%;
+
+      display: flex;
+      flex-direction: row;
+      row-gap: 2.4rem;
+      align-items: center;
+
+      margin: 0 -9.75px;
+   }
+
+   .home-wrapper .imgElement {
+      flex: 0 0 auto;
+      width: 50%;
+   }
+
+   .adjust-services {
+      display: flex;
+      flex-wrap: wrap;
+
+      overflow-wrap: anywhere;
+   }
+
+   .adjust-services .imgElement {
+      display: flex !important;
+      flex-direction: column !important;
+      flex: 0 0 auto;
+      width: 33.3333333333%;
+   }
+
+   .gallery-images {
+      display: flex;
+      flex-direction: column;
+
    }
 
    .desktop {
@@ -453,41 +495,14 @@ textarea.form-control {
    }
 }
 
-/* @media (max-width: 768px) {
-   .hideOnMobile {
-      display: none;
-   }
-   
-   nav a {
-      height: 100%;
-
-      text-decoration: none;
-
-      display: flex;
-      align-items: center;
-      justify-content: center;
-
-      padding: 6.5px 13px;
-
-      color: black;
-   }
-
-   .menu-button {
-   display: none;
-}
-
-
-   .menu-button {
-      display: block;
-   }
-
-   .hideOnMobile {
-      padding: 6.5px 13px;
+@media (min-width: 1200px) {
+   #global-container {
+      max-width: 114rem;
    }
 }
 
-@media (max-width: 400px) {
-   .sidebar {
-      width: 100%;
+@media (min-width: 1400px) {
+   #global-container {
+      max-width: 1320px;
    }
-} */
+}
