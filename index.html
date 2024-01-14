@@ -16,42 +16,34 @@
 
 	<body>
 		<div id="global-container">
-			<section id="logo">
+			<section id="navElement">
 				<nav id="nav-container">
-					<a class="logo" href="">Castanhos Tecnologia</a>
-
-					<!--  -->
-
-					<div class="sidebar-wrapper">
-						<ul class="sidebar">
-							<li>
-								<a onclick="closeMenu()" href="#">
-									<svg width="24px" height="24px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path
-											opacity="0.5"
-											d="M12 22C7.28595 22 4.92893 22 3.46447 20.5355C2 19.0711 2 16.714 2 12C2 7.28595 2 4.92893 3.46447 3.46447C4.92893 2 7.28595 2 12 2C16.714 2 19.0711 2 20.5355 3.46447C22 4.92893 22 7.28595 22 12C22 16.714 22 19.0711 20.5355 20.5355C19.0711 22 16.714 22 12 22Z"
-											fill="#1C274C" />
-										<path
-											d="M8.96967 8.96967C9.26256 8.67678 9.73744 8.67678 10.0303 8.96967L12 10.9394L13.9697 8.96969C14.2626 8.6768 14.7374 8.6768 15.0303 8.96969C15.3232 9.26258 15.3232 9.73746 15.0303 10.0303L13.0607 12L15.0303 13.9697C15.3232 14.2625 15.3232 14.7374 15.0303 15.0303C14.7374 15.3232 14.2625 15.3232 13.9696 15.0303L12 13.0607L10.0304 15.0303C9.73746 15.3232 9.26258 15.3232 8.96969 15.0303C8.6768 14.7374 8.6768 14.2626 8.96969 13.9697L10.9394 12L8.96967 10.0303C8.67678 9.73744 8.67678 9.26256 8.96967 8.96967Z"
-											fill="#1C274C" />
-									</svg>
-								</a>
-							</li>
-							<li><a onclick="closeMenu()" href="#logo">Iníco</a></li>
-							<li><a onclick="closeMenu()" href="#services">Serviços</a></li>
-							<li><a onclick="closeMenu()" href="#gallery">Galeria</a></li>
-							<li><a onclick="closeMenu()" href="#contact">Contato</a></li>
-						</ul>
+					<div>
+						<a class="logo" href="#">Castanhos Tecnologia</a>
 					</div>
 
 					<!--  -->
 
-					<ul class="desktop">
-						<li><a class="opt" href="#logo">Iníco</a></li>
-						<li><a class="opt" href="#services">Serviços</a></li>
-						<li><a class="opt" href="#gallery">Galeria</a></li>
-						<li><a class="btn" href="#contact">Contate-nos</a></li>
-					</ul>
+					<div class="sidebar-wrapper">
+						<div class="sidebar">
+							<li><a onclick="closeMenu()" href="#services">Serviços</a></li>
+							<li><a onclick="closeMenu()" href="#gallery">Galeria</a></li>
+							<a class="btn" onclick="closeMenu()" href="#contact">Contate-nos</a>
+						</div>
+					</div>
+
+					<!--  -->
+
+					<div class="desktop">
+						<ul>
+							<li><a class="opt" href="#services">Serviços</a></li>
+							<li><a class="opt" href="#gallery">Galeria</a></li>
+						</ul>
+
+						<div class="btn" style="margin-left: 0.5rem">
+							<a href="#contact">Contate-nos</a>
+						</div>
+					</div>
 
 					<!--  -->
 
@@ -72,12 +64,6 @@
 					</div>
 				</nav>
 			</section>
-
-			<!--  -->
-
-			<div class="line">
-				<span></span>
-			</div>
 
 			<!--  -->
 
@@ -160,32 +146,50 @@
 			<section id="gallery">
 				<div class="containers" id="gallery-container">
 					<div class="gallery">
-						<h2 class="texth2">Gallery</h2>
+						<h2 class="texth2">Galeria</h2>
 						<div class="gallery-images">
-							<img
-								src="https://images.unsplash.com/photo-1581090700227-1e37b190418e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0OTUyODh8MHwxfHNlYXJjaHwyMXx8dGVjaG5vbG9neXxlbnwwfDB8fHwxNzA0MjI5MjM3fDA&ixlib=rb-4.0.3&q=80&w=1080"
-								alt="silhouette of woman wearing black hat and black coat" />
-							<img
-								src="https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0OTUyODh8MHwxfHNlYXJjaHwyMnx8dGVjaG5vbG9neXxlbnwwfDB8fHwxNzA0MjI5MjM3fDA&ixlib=rb-4.0.3&q=80&w=1080"
-								alt="Colorful software or web code on a computer monitor" />
-							<img
-								src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0OTUyODh8MHwxfHNlYXJjaHwyNHx8dGVjaG5vbG9neXxlbnwwfDB8fHwxNzA0MjI5MjM3fDA&ixlib=rb-4.0.3&q=80&w=1080"
-								alt="monitor showing Java programming" />
-							<img
-								src="https://images.unsplash.com/photo-1496096265110-f83ad7f96608?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0OTUyODh8MHwxfHNlYXJjaHwyM3x8dGVjaG5vbG9neXxlbnwwfDB8fHwxNzA0MjI5MjM3fDA&ixlib=rb-4.0.3&q=80&w=1080"
-								alt="white and black digital wallpaper" />
-							<img
-								src="https://images.unsplash.com/photo-1488229297570-58520851e868?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0OTUyODh8MHwxfHNlYXJjaHwyOHx8dGVjaG5vbG9neXxlbnwwfDB8fHwxNzA0MjI5MjM3fDA&ixlib=rb-4.0.3&q=80&w=1080"
-								alt="worm's eye-view photography of ceiling" />
-							<img
-								src="https://images.unsplash.com/photo-1516251193007-45ef944ab0c6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0OTUyODh8MHwxfHNlYXJjaHwyN3x8dGVjaG5vbG9neXxlbnwwfDB8fHwxNzA0MjI5MjM3fDA&ixlib=rb-4.0.3&q=80&w=1080"
-								alt="high angle photo of person holding turned on smartphone with tall buildings background" />
-							<img
-								src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0OTUyODh8MHwxfHNlYXJjaHwyNnx8dGVjaG5vbG9neXxlbnwwfDB8fHwxNzA0MjI5MjM3fDA&ixlib=rb-4.0.3&q=80&w=1080"
-								alt="flatlay photography of wireless headphones" />
-							<img
-								src="https://images.unsplash.com/photo-1504384764586-bb4cdc1707b0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0OTUyODh8MHwxfHNlYXJjaHwyNXx8dGVjaG5vbG9neXxlbnwwfDB8fHwxNzA0MjI5MjM3fDA&ixlib=rb-4.0.3&q=80&w=1080"
-								alt="man using laptop in front of brown chair" />
+							<div
+								class="img-box"
+								style="
+									background-image: url(https://images.unsplash.com/photo-1581090700227-1e37b190418e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0OTUyODh8MHwxfHNlYXJjaHwyMXx8dGVjaG5vbG9neXxlbnwwfDB8fHwxNzA0MjI5MjM3fDA&ixlib=rb-4.0.3&q=80&w=1080);
+									width: 50%;
+								"></div>
+							<div
+								class="img-box"
+								style="
+									background-image: url(https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0OTUyODh8MHwxfHNlYXJjaHwyMnx8dGVjaG5vbG9neXxlbnwwfDB8fHwxNzA0MjI5MjM3fDA&ixlib=rb-4.0.3&q=80&w=1080);
+									width: 50%;
+								"></div>
+							<div
+								class="img-box"
+								style="
+									background-image: url(https://images.unsplash.com/photo-1496096265110-f83ad7f96608?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0OTUyODh8MHwxfHNlYXJjaHwyM3x8dGVjaG5vbG9neXxlbnwwfDB8fHwxNzA0MjI5MjM3fDA&ixlib=rb-4.0.3&q=80&w=1080);
+								"></div>
+							<div
+								class="img-box"
+								style="
+									background-image: url(https://images.unsplash.com/photo-1461749280684-dccba630e2f6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0OTUyODh8MHwxfHNlYXJjaHwyNHx8dGVjaG5vbG9neXxlbnwwfDB8fHwxNzA0MjI5MjM3fDA&ixlib=rb-4.0.3&q=80&w=1080);
+								"></div>
+							<div
+								class="img-box"
+								style="
+									background-image: url(https://images.unsplash.com/photo-1504384764586-bb4cdc1707b0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0OTUyODh8MHwxfHNlYXJjaHwyNXx8dGVjaG5vbG9neXxlbnwwfDB8fHwxNzA0MjI5MjM3fDA&ixlib=rb-4.0.3&q=80&w=1080);
+								"></div>
+							<div
+								class="img-box"
+								style="
+									background-image: url(https://images.unsplash.com/photo-1505740420928-5e560c06d30e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0OTUyODh8MHwxfHNlYXJjaHwyNnx8dGVjaG5vbG9neXxlbnwwfDB8fHwxNzA0MjI5MjM3fDA&ixlib=rb-4.0.3&q=80&w=1080);
+								"></div>
+							<div
+								class="img-box"
+								style="
+									background-image: url(https://images.unsplash.com/photo-1516251193007-45ef944ab0c6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0OTUyODh8MHwxfHNlYXJjaHwyN3x8dGVjaG5vbG9neXxlbnwwfDB8fHwxNzA0MjI5MjM3fDA&ixlib=rb-4.0.3&q=80&w=1080);
+								"></div>
+							<div
+								class="img-box"
+								style="
+									background-image: url(https://images.unsplash.com/photo-1488229297570-58520851e868?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0OTUyODh8MHwxfHNlYXJjaHwyOHx8dGVjaG5vbG9neXxlbnwwfDB8fHwxNzA0MjI5MjM3fDA&ixlib=rb-4.0.3&q=80&w=1080);
+								"></div>
 						</div>
 					</div>
 				</div>
@@ -232,7 +236,7 @@
 										type="text"
 										class="form-control"
 										id="emails"
-										placeholder="name@example.com"
+										placeholder="nome@exemplo.com"
 										value=""
 										required />
 								</div>
@@ -275,8 +279,8 @@
 
 			<!--  -->
 
-			<a id="backToTopButton" href="#logo"
-				><svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<a id="backToTopButton" href="#navElement">
+				<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
 					<circle cx="20" cy="20" r="20" fill="#00856F" />
 					<path d="M20 27V13" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
 					<path d="M13 20L20 13L27 20" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
@@ -284,6 +288,6 @@
 			</a>
 		</div>
 
-		<script src="./javascript/main.js"></script>
+		<script src="./js/main.js"></script>
 	</body>
 </html>
