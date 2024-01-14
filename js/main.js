@@ -7,11 +7,19 @@ function onscroll() {
 function openMenu() {
 	const sidebar = document.querySelector(".sidebar");
 	sidebar.style.display = "flex";
+	const openmenu = document.querySelector(".open-menu");
+	openmenu.style.display = "none";
+	const closemenu = document.querySelector(".close-menu");
+	closemenu.style.display = "flex";
 }
 
 function closeMenu() {
 	const sidebar = document.querySelector(".sidebar");
 	sidebar.style.display = "none";
+	const openmenu = document.querySelector(".open-menu");
+	openmenu.style.display = "flex";
+	const closemenu = document.querySelector(".close-menu");
+	closemenu.style.display = "none";
 }
 
 function showBackToTopButtonOnScroll() {

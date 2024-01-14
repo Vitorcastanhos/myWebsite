@@ -12,13 +12,9 @@ body {
 	scroll-behavior: smooth;
 }
 body {
-	/* max-width: 1140px; */
-
 	font-size: 1.6rem;
 	font-family: "Roboto Serif", sans-serif;
-
 	margin: 0 auto;
-
 	color: #0c0a09;
 	background-color: #ffffff;
 }
@@ -30,9 +26,7 @@ body {
 	font-size: 2.6rem;
 	font-weight: 500;
 	line-height: 3.4rem;
-
 	color: #0c0a09;
-
 	margin-bottom: 3.8rem;
 }
 .containers {
@@ -40,16 +34,12 @@ body {
 }
 /* ----------------- navigation bar ------------------- */
 #nav-container {
-	position: relative;
-}
-nav {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-
 	padding: 1.2rem 2.4rem;
-
 	height: 7.2rem;
+	position: relative;
 }
 nav .logo,
 footer .logo {
@@ -68,11 +58,24 @@ nav a {
 	text-decoration: none;
 	color: #0c0a09;
 }
-nav a.menu-button {
-	padding: 0;
+.menu-button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
 }
-nav a.menu-button svg {
+.menu-button a svg {
 	vertical-align: middle;
+}
+.open-menu {
+	display: flex;
+	right: 0;
+}
+.close-menu {
+	display: none;
+	right: 0;
+	position: absolute;
+	z-index: 999;
 }
 #nav-container .desktop {
 	display: none;
@@ -82,6 +85,11 @@ nav a.menu-button svg {
 	width: auto;
 	font-weight: 400;
 	line-height: 2.6rem;
+	padding: initial;
+	height: initial;
+}
+#nav-container .desktop .btn a{
+	padding: 4.875px 16px;
 }
 #nav-container > div:first-child {
 	margin-right: auto;
@@ -101,14 +109,10 @@ nav a.menu-button svg {
 	z-index: 999;
 	max-width: 44rem;
 	top: 7.2rem;
-
-	color: #44403c !important;
+	color: #44403c;
 	background-color: #fff;
 	box-shadow: 0px -1px 0px 0px rgba(0, 0, 0, 0.12) inset;
 }
-/* .sidebar {
-	width: 100%;
-} */
 .sidebar {
 	display: flex;
 	flex-direction: column;
@@ -116,7 +120,6 @@ nav a.menu-button svg {
 	padding: 2.4rem;
 	row-gap: 1.2rem;
 	width: 100%;
-
 	list-style: none;
 	border: 1px solid #cfcfd8;
 	font-size: 1.6rem;
@@ -127,17 +130,13 @@ nav a.menu-button svg {
 	width: 100%;
 	line-height: 2.4rem;
 	padding: 6.5px 16px;
-
 	font-size: 16px;
 	font-family: "Roboto Serif", sans-serif;
 	font-weight: 500;
-
 	border: none;
 	border-radius: 4px;
-
 	color: #0c0a09;
 	background-color: #6ee7b7;
-
 	cursor: pointer;
 }
 /* ------------------- HOME ---------------------- */
@@ -145,16 +144,13 @@ nav a.menu-button svg {
 	width: 100%;
 	display: flex;
 	flex-direction: column;
-
 	row-gap: 24px;
-
 	margin: 0 -9.75px;
 }
 .home-wrapper h1 {
 	font-size: 32.5px;
 	font-weight: 500;
 	line-height: 39px;
-
 	margin-bottom: 19.5px;
 }
 .home-wrapper p {
@@ -162,9 +158,7 @@ nav a.menu-button svg {
 	font-weight: 300;
 	line-height: 2.6rem;
 	text-align: left;
-
 	margin-bottom: 22.75px;
-
 	color: rgb(68, 64, 60);
 }
 .home-wrapper .btn,
@@ -172,19 +166,14 @@ nav a.menu-button svg {
 .desktop .btn {
 	height: 39.98px;
 	line-height: 2.4rem;
-
 	padding: 6.5px 16px;
-
 	font-size: 16px;
 	font-family: "Roboto Serif", sans-serif;
 	font-weight: 500;
-
 	border: none;
 	border-radius: 4px;
-
 	color: #0c0a09;
 	background-color: #6ee7b7;
-
 	cursor: pointer;
 }
 .home-wrapper img,
@@ -193,7 +182,6 @@ nav a.menu-button svg {
 	object-fit: cover;
 	overflow: hidden;
 	width: 100%;
-
 	border-radius: 4px;
 }
 .home-wrapper .entry {
@@ -239,7 +227,7 @@ nav a.menu-button svg {
 	flex-wrap: wrap;
 	width: 100%;
 }
-.gallery-images .img-box{
+.gallery-images .img-box {
 	aspect-ratio: 1.3333333333333333;
 	background-clip: content-box;
 	background-repeat: no-repeat;
@@ -294,20 +282,17 @@ nav a.menu-button svg {
 #contact-container {
 	display: flex;
 	flex-direction: column;
-
 	color: #44403c;
 	background-color: #f5f5f4;
 }
 #contact-container h2 {
 	line-height: 34.125px;
-
 	margin-bottom: 1.6rem;
 }
 #input-container {
 	display: flex;
 	flex-direction: column;
 	max-width: 100%;
-
 	line-height: 2.2rem;
 	margin-top: 3.9rem;
 	padding: 0 9.75px;
@@ -317,7 +302,6 @@ nav a.menu-button svg {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-
 	margin: -3.9rem -9.75px 0;
 	padding-bottom: 3.9rem;
 }
@@ -328,13 +312,11 @@ nav a.menu-button svg {
 .form-textearea {
 	display: flex;
 	flex-direction: column;
-
 	margin-bottom: 1.3rem;
 }
 .form-input .form-label,
 .form-textearea .form-label {
 	margin-bottom: 6.5px;
-
 	line-height: 2.6rem;
 }
 .form-textearea {
@@ -369,7 +351,6 @@ textarea.form-control {
 .footer-company {
 	display: flex;
 	flex: 1 0 0%;
-
 	padding: 0 9.75px;
 	margin-left: 0;
 }
@@ -385,10 +366,8 @@ textarea.form-control {
 	position: fixed;
 	bottom: 1rem;
 	right: 3rem;
-
 	opacity: 0;
 	visibility: hidden;
-
 	transition: opacity.2s ease-in-out;
 	transition: 300ms ease-in;
 }
@@ -397,8 +376,6 @@ textarea.form-control {
 	visibility: visible;
 }
 /*------------------- DESKTOP PART --------------------*/
-
-/* --------- medias ---------- */
 @media (min-width: 576px) {
 	#global-container {
 		max-width: 54rem;
@@ -438,26 +415,38 @@ textarea.form-control {
 	#global-container {
 		max-width: 96rem;
 	}
+	#nav-container {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	#nav-container .desktop {
+		display: flex;
+		gap: 1rem;
+	}
+	.menu-button {
+		display: none;
+	}
 	.home-wrapper {
 		min-height: 42rem;
 		width: 100%;
-
 		display: flex;
 		flex-direction: row;
 		row-gap: 2.4rem;
 		justify-content: center;
 		align-items: center;
-
 		margin: 0 -9.75px;
 	}
 	.home-wrapper .imgElement {
 		flex: 0 0 auto;
 		width: 50%;
+		padding: 0 9.75px 0 1.95rem;
+	}
+	.home-wrapper .entry {
+		padding: 0 1.95rem 0 9.75px;
 	}
 	.adjust-services {
 		display: flex;
 		flex-wrap: wrap;
-
 		overflow-wrap: anywhere;
 	}
 	.adjust-services .imgElement {
@@ -489,17 +478,6 @@ textarea.form-control {
 	#input-container {
 		flex: 0 0 auto;
 		width: 50%;
-	}
-	#nav-container {
-		display: flex;
-		flex-wrap: wrap;
-	}
-	#nav-container .desktop {
-		display: flex;
-		gap: 1rem;
-	}
-	.menu-btn {
-		display: none;
 	}
 }
 @media (min-width: 1200px) {
