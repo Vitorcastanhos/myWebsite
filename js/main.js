@@ -23,7 +23,7 @@ function closeMenu() {
 }
 
 function showBackToTopButtonOnScroll() {
-	if (scrollY > window.innerHeight - 100) {
+	if (scrollY > window.innerHeight - 50) {
 		backToTopButton.classList.add("show");
 	} else {
 		backToTopButton.classList.remove("show");
