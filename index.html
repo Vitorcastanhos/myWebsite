@@ -221,7 +221,7 @@
 			<!--  -->
 
 			<section id="contact">
-				<form class="containers" id="contact-container">
+				<form action="#" class="containers" id="contact-container">
 					<div>
 						<div class="h2-container">
 							<h2 class="texth2">Contate-nos</h2>
@@ -229,29 +229,36 @@
 						<div class="form-adjust">
 							<div id="input-container">
 								<div class="form-input">
-									<label for="emails" class="form-label">Email (obrigatório)</label>
+									<label for="name" class="form-label">Nome (obrigatório)</label>
+									<input name="name" type="text" class="form-control" id="name" autocomplete="off" required />
+								</div>
+
+								<div class="form-input">
+									<label for="email" class="form-label">Email (obrigatório)</label>
 									<input
 										name="email"
 										type="email"
 										class="form-control"
-										id="emails"
+										id="email"
 										placeholder="nome@exemplo.com"
 										value=""
+										autocomplete="off"
 										required />
 								</div>
 
 								<div class="form-input">
-									<label for="names" class="form-label">Nome (obrigatório)</label>
-									<input name="fullName" type="text" class="form-control" id="names" required />
-								</div>
-								<div class="form-input">
-									<label for="phones" class="form-label">Telefone</label>
-									<input name="phone" type="text" class="form-control" id="phones" />
+									<label for="phone" class="form-label">Telefone</label>
+									<input name="phone" type="text" class="form-control" id="phone" autocomplete="off" required />
 								</div>
 
 								<div class="form-textearea">
-									<label for="messages" class="form-label">Menssagem (obrigatório)</label>
-									<textarea name="message" class="form-control" id="messages" required></textarea>
+									<label for="mess" class="form-label">Mensagem (obrigatório)</label>
+									<textarea
+										name=""
+										id="mess"
+										class="form-control"
+										autocomplete="off"
+										placeholder=""></textarea>
 								</div>
 
 								<button class="btn" type="submit">Contate-nos</button>
@@ -286,7 +293,8 @@
 				</svg>
 			</a>
 		</div>
-
+		<script src="https://smtpjs.com/v3/smtp.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 		<script src="./js/main.js"></script>
 	</body>
 </html>
