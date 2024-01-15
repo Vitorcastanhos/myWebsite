@@ -292,7 +292,7 @@ nav a {
 #input-container {
 	display: flex;
 	flex-direction: column;
-	max-width: 100%;
+	width: 100%;
 	line-height: 2.2rem;
 	margin-top: 3.9rem;
 	padding: 0 9.75px;
