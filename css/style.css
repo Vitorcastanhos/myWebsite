@@ -41,11 +41,11 @@ body {
 	height: 7.2rem;
 	position: relative;
 }
-nav .logo,
+#nav-container a.logo,
 footer .logo {
 	font-weight: 500;
-	font-size: 2rem;
-	line-height: 2.9rem;
+	font-size: 1.95rem;
+	line-height: 29.25px;
 }
 nav ul {
 	display: flex;
@@ -323,6 +323,7 @@ nav a {
 	margin-bottom: 19.5px;
 }
 input[type="text"],
+input[type="email"],
 textarea.form-control {
 	width: 100%;
 	border-color: #cfcfd8;

@@ -48,7 +48,7 @@
 					<!--  -->
 
 					<div class="menu-button">
-						<a class="open-menu" onclick="openMenu()"  href="#">
+						<a class="open-menu" onclick="openMenu()" href="#">
 							<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="26" height="26" viewBox="0 0 30 30">
 								<path
 									d="M 3 7 A 1.0001 1.0001 0 1 0 3 9 L 27 9 A 1.0001 1.0001 0 1 0 27 7 L 3 7 z M 3 14 A 1.0001 1.0001 0 1 0 3 16 L 27 16 A 1.0001 1.0001 0 1 0 27 14 L 3 14 z M 3 21 A 1.0001 1.0001 0 1 0 3 23 L 27 23 A 1.0001 1.0001 0 1 0 27 21 L 3 21 z"></path>
@@ -221,7 +221,7 @@
 			<!--  -->
 
 			<section id="contact">
-				<form class="containers" id="contact-container">
+				<form action="form-process.php" method="POST" class="containers" id="contact-container">
 					<div>
 						<div class="h2-container">
 							<h2 class="texth2">Contate-nos</h2>
@@ -231,7 +231,8 @@
 								<div class="form-input">
 									<label for="emails" class="form-label">Email (obrigatório)</label>
 									<input
-										type="text"
+										name="email"
+										type="email"
 										class="form-control"
 										id="emails"
 										placeholder="nome@exemplo.com"
@@ -241,16 +242,16 @@
 
 								<div class="form-input">
 									<label for="names" class="form-label">Nome (obrigatório)</label>
-									<input type="text" class="form-control" id="names" required />
+									<input name="fullName" type="text" class="form-control" id="names" required />
 								</div>
 								<div class="form-input">
 									<label for="phones" class="form-label">Telefone</label>
-									<input type="text" class="form-control" id="phones" />
+									<input name="phone" type="text" class="form-control" id="phones" />
 								</div>
 
 								<div class="form-textearea">
 									<label for="messages" class="form-label">Menssagem (obrigatório)</label>
-									<textarea class="form-control" id="messages" required></textarea>
+									<textarea name="message" class="form-control" id="messages" required></textarea>
 								</div>
 
 								<button class="btn" type="submit">Contate-nos</button>
