@@ -58,8 +58,9 @@
 						<a class="close-menu" onclick="closeMenu()" href="#">
 							<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="26" height="26" viewBox="0 0 24 24">
 								<path
-									d="M 4.9902344 3.9902344 A 1.0001 1.0001 0 0 0 4.2929688 5.7070312 L 10.585938 12 L 4.2929688 18.292969 A 1.0001 1.0001 0 1 0 5.7070312 19.707031 L 12 13.414062 L 18.292969 19.707031 A 1.0001 1.0001 0 1 0 19.707031 18.292969 L 13.414062 12 L 19.707031 5.7070312 A 1.0001 1.0001 0 0 0 18.980469 3.9902344 A 1.0001 1.0001 0 0 0 18.292969 4.2929688 L 12 10.585938 L 5.7070312 4.2929688 A 1.0001 1.0001 0 0 0 4.9902344 3.9902344 z"></path></svg
-						></a>
+									d="M 4.9902344 3.9902344 A 1.0001 1.0001 0 0 0 4.2929688 5.7070312 L 10.585938 12 L 4.2929688 18.292969 A 1.0001 1.0001 0 1 0 5.7070312 19.707031 L 12 13.414062 L 18.292969 19.707031 A 1.0001 1.0001 0 1 0 19.707031 18.292969 L 13.414062 12 L 19.707031 5.7070312 A 1.0001 1.0001 0 0 0 18.980469 3.9902344 A 1.0001 1.0001 0 0 0 18.292969 4.2929688 L 12 10.585938 L 5.7070312 4.2929688 A 1.0001 1.0001 0 0 0 4.9902344 3.9902344 z"></path>
+							</svg>
+						</a>
 					</div>
 				</nav>
 			</section>
@@ -230,31 +231,52 @@
 						<div class="form-adjust">
 							<div id="input-container">
 								<div class="form-input">
-									<label for="name" class="form-label">Nome (obrigatório)</label>
-									<input name="name" type="text" class="form-control" id="name" autocomplete="off" required />
+									<label for="name" class="form-label">Nome <small style="color: red">*</small></label>
+									<input
+										name="name"
+										pattern="az"
+										type="text"
+										class="form-control"
+										id="name"
+										autocomplete="off"
+										required />
 								</div>
 
 								<div class="form-input">
-									<label for="email" class="form-label">Email (obrigatório)</label>
+									<label for="email" class="form-label">Email <small style="color: red">*</small></label>
 									<input
 										name="email"
 										type="email"
 										class="form-control"
 										id="email"
-										placeholder="nome@exemplo.com"
+										placeholder=""
 										value=""
 										autocomplete="off"
 										required />
 								</div>
 
 								<div class="form-input">
-									<label for="phone" class="form-label">Telefone</label>
-									<input name="phone" type="text" class="form-control" id="phone" autocomplete="off" required />
+									<label for="phone" class="form-label">Telefone <small style="color: red">*</small></label>
+									<input
+										pattern="0-9"
+										name="phone"
+										type="tel"
+										maxlength="11"
+										class="form-control"
+										id="phone"
+										autocomplete="off"
+										required />
 								</div>
 
 								<div class="form-textearea">
-									<label for="mess" class="form-label">Mensagem (obrigatório)</label>
-									<textarea name="" id="mess" class="form-control" autocomplete="off" placeholder=""></textarea>
+									<label for="mess" class="form-label">Mensagem <small style="color: red">*</small></label>
+									<textarea
+										name="mess"
+										id="mess"
+										class="form-control"
+										autocomplete="off"
+										placeholder=""
+										required></textarea>
 								</div>
 
 								<button class="btn" type="submit">Contate-nos</button>

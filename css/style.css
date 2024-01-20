@@ -324,6 +324,7 @@ nav a {
 }
 input[type="text"],
 input[type="email"],
+input[type="tel"],
 textarea.form-control {
 	width: 100%;
 	border-color: #cfcfd8;
