@@ -72,52 +72,52 @@ function sendEmail() {
 	});
 }
 
-// function checkInputs() {
-// 	const forms = document.querySelectorAll(".form-control");
+function checkInputs() {
+	const forms = document.querySelectorAll(".form-control");
 
-// 	for (const form of forms) {
-// 		if (form.value == "") {
-// 			form.classList.add("error");
-// 			form.parentElement.classList.add("error");
-// 		}
-// 		if (forms[1].value != "") {
-// 			checkEmail();
-// 		}
-// 		if (
-// 			forms[1].addEventListener("keyup", () => {
-// 				checkEmail();
-// 			})
-// 		)
-// 			item.addEventListener("keyup", () => {
-// 				if (item.value != "") {
-// 					item.classList.remove("error");
-// 					item.parentElement.classList.remove("error");
-// 				} else {
-// 					item.classList.add("error");
-// 					item.parentElement.classList.add("error");
-// 				}
-// 			});
-// 	}
-// }
+	for (const form of forms) {
+		if (form.value == "") {
+			form.classList.add("error");
+			form.parentElement.classList.add("error");
+		}
+		if (forms[1].value != "") {
+			checkEmail();
+		}
+		if (
+			forms[1].addEventListener("keyup", () => {
+				checkEmail();
+			})
+		)
+			item.addEventListener("keyup", () => {
+				if (item.value != "") {
+					item.classList.remove("error");
+					item.parentElement.classList.remove("error");
+				} else {
+					item.classList.add("error");
+					item.parentElement.classList.add("error");
+				}
+			});
+	}
+}
 
-// function checkEmail() {
-// 	const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
-// 	const errorTextEmail = document.getElementsByClassName("email");
+function checkEmail() {
+	const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+	const errorTextEmail = document.getElementsByClassName("email");
 
-// 	if (!email.value.match(emailRegex)) {
-// 		email.classList.add("error");
-// 		email.parentElement.classList.add("ërror");
+	if (!email.value.match(emailRegex)) {
+		email.classList.add("error");
+		email.parentElement.classList.add("ërror");
 
-// 		if (email.value != "") {
-// 			errorTextEmail.innerText = "Adicione um email válido.";
-// 		} else {
-// 			errorTextEmail.innerText = "Endereço de email não pode ficar vazio.";
-// 		}
-// 	} else {
-// 		email.classList.remove("error");
-// 		email.parentElement.classList.remove("ërror");
-// 	}
-// }
+		if (email.value != "") {
+			errorTextEmail.innerText = "Adicione um email válido.";
+		} else {
+			errorTextEmail.innerText = "Endereço de email não pode ficar vazio.";
+		}
+	} else {
+		email.classList.remove("error");
+		email.parentElement.classList.remove("ërror");
+	}
+}
 
 form.addEventListener("submit", (e) => {
 	e.preventDefault();
