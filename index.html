@@ -233,8 +233,9 @@
 								<div class="form-input">
 									<label for="name" class="form-label">Nome <small style="color: red">*</small></label>
 									<input
+									minlength="2"
 										name="name"
-										pattern="az"
+										pattern="[A-Za-z]+"
 										type="text"
 										class="form-control"
 										id="name"
@@ -245,6 +246,7 @@
 								<div class="form-input">
 									<label for="email" class="form-label">Email <small style="color: red">*</small></label>
 									<input
+									pattern="[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
 										name="email"
 										type="email"
 										class="form-control"
@@ -258,7 +260,7 @@
 								<div class="form-input">
 									<label for="phone" class="form-label">Telefone <small style="color: red">*</small></label>
 									<input
-										pattern="0-9"
+										pattern="[0-9]+"
 										name="phone"
 										type="tel"
 										maxlength="11"
